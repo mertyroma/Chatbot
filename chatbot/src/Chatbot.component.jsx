@@ -29,7 +29,6 @@ class ChatBotRobot extends React.Component {
                 let description = offer.hotel.description.text;
                 let rating = offer.hotel.rating;
                 let name = offer.hotel.name;
-                let imgUrl = offer.hotel.media.uri;
                 let price = offer.offers[0].price.total + ' ' + offer.offers[0].price.currency;
                 return `\n${name}\nDescription: ${description}\nAddress: ${address}\n${email ? 'Email: ' + email + '\n' : ''}Phone: ${phone}\nRating: ${rating} \nPrice: ${price}\n`;
             });
